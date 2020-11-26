@@ -1,0 +1,33 @@
+.container
+    display: flex
+    flex: 1 1
+    flex-direction: column
+
+    .row
+        display: flex
+        padding-right: 15px
+
+        &:hover
+            background-color: whitesmoke
+
+        .checkbox
+            flex: 1
+
+        .toggle
+            display: flex
+            align-items: center
+
+            &.expanded
+                img
+                    transition: .5s
+                    transform: rotate(-180deg)
+
+            &.collapsed
+                img
+                    transition: .5s
+                    transform: rotate(0deg)
+
+            img
+                cursor: pointer
+                width: 15px
+                height: 15px
